@@ -9,6 +9,8 @@ comportamento do historico de compras de um usuário!
 
 Uma aplicação em `Node.js` usando `Express.js` e `Typescript`, composta pela arquitetura `MSC`.
 
+<br/>
+
 🚧 Testes iniciais de integração, criados! 🚧
 
 <br />
@@ -22,7 +24,7 @@ Uma aplicação em `Node.js` usando `Express.js` e `Typescript`, composta pela a
 
 ## Endpoints da API
 
-### - GET `/cart-history?id`
+### - GET `/cart-history?id='idDoUsuario'`
 
   * **[Validado que o parametro 'id', recebido atraves da rota, realmente existe, e condiz com o tipo esperado ]**
 - Se a requisição é feita com sucesso, seguem as seguintes informações como resposta, exatamente nesse formato:
