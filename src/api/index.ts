@@ -1,12 +1,16 @@
 import express from 'express';
-import cartsRouter from './routes/carts.route';
+import 'express-async-errors';
+import errorHandler from './middleware/error.middleware';
+import cartsRouter from './routes/cart.route';
 
 const api = express();
 
 api.use(express.json());
 api.use(express.urlencoded({ extended: true }));
 
-api.use('/carts', cartsRouter);
+api.use('/cart-history', cartsRouter);
 api.get('/', (_, res) => res.send());
+api.use(errorHandler);
+
 
 export default api;
